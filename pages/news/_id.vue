@@ -12,8 +12,24 @@
 
 <script >
   export default {
-    validate({params}){
+    validate ({params}){
       return /^\d+$/.test(params.id);
+    },
+    data() {
+      return {
+        title: this.$route.params.id
+      }
+    },
+    // 自定义单页的meta
+    head() {
+      return{
+        title: this.title,
+        meta:[
+          {hid:'description',name:'news1',content:'I am News'}
+        ]
+      }
+      // 修改了顶部的title后 meta 也会变成如下
+      // <meta data-n-head="ssr" data-hid="description" name="news1" content="I am News">
     }
   }
 </script>

@@ -1,15 +1,12 @@
 <template>
   <div>
     <h2>news index page</h2>
-    <p>newsid:{{$route.params.newsid}}</p>
+    <p>newsid:{{$route.params}}</p>
     <ul>
       <li><a href="/">home</a></li>
       <li><a href="/news/123">news-123</a></li>
       <li>
         <nuxt-link :to="{name:'news-id',params:{id:456}}">news-456</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="{name:'news-news_id',params:{news_id:789}}">news-789</nuxt-link>
       </li>
       <li><a href="/news/aaa">news-aaa</a></li>
     </ul>
