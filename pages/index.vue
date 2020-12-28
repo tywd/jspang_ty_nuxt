@@ -5,7 +5,15 @@
       <h1 class="title">
         CJTYWD
       </h1>
-      <h2 class="subtitle">
+      <ul>
+        <li><a href="/">home</a></li>
+        <li><nuxt-link :to="{name:'index'}">nuxtlink home</nuxt-link></li>
+        <li><nuxt-link :to="{name:'about',params:{id:123}}">nuxtlink about</nuxt-link></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/news">news</a></li>
+      </ul>
+      
+      <!-- <h2 class="subtitle">
         Nuxt.js project
       </h2>
       <div class="links">
@@ -17,7 +25,7 @@
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey">GitHub</a>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

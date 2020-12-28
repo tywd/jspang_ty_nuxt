@@ -25,7 +25,7 @@ module.exports = {
   * 配置访问域名与端口
   */
   server: {
-    port: 8081, // default: 3000
+    port: '8081', // default: 3000
     host: '0.0.0.0' // default: localhost
   },
   /*
@@ -36,16 +36,16 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    loaders: [
-      {
-        test: /\.(png|jpe?g|gif|svg)$/,
-        loader: "url-loader",
-        query: {
-          limit: 10000,
-          name: "img/[name].[hash].[ext]"
-        }
-      }
-    ],
+    // loaders: [
+    //   {
+    //     test: /\.(png|jpe?g|gif|svg)$/,
+    //     loader: "url-loader",
+    //     query: {
+    //       limit: 10000,
+    //       name: "img/[name].[hash].[ext]"
+    //     }
+    //   }
+    // ],
     /*
     ** Run ESLint on save
     */
