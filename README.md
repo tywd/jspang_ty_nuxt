@@ -24,3 +24,5 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 ### 说明
 基础入门学习视频博客网站：[https://jspang.com/detailed?id=37](https://jspang.com/detailed?id=37)
 以下画线为前缀的Vue文件就是动态路由 比如 pages/news/_id.vue
+
+静态资源打包 npm run generate

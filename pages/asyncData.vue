@@ -20,6 +20,7 @@ export default {
       name: 'hello world'
     };
   },
+  // 1.第一种方式
   // asyncData () {
   //   return axios.get('https://api.myjson.com/bins/8gdmr')
   //     .then((res) => {
@@ -27,6 +28,7 @@ export default {
   //       return { info: res.data }
   //     })
   // },
+  // 1.第二种方式
   async asyncData(){
     let {data} = axios.get('https://api.myjson.com/bins/8gdmr')
     return {info: data}

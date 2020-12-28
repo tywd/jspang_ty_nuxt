@@ -2,6 +2,9 @@
   <section class="container">
     <div>
       <app-logo/>
+      <div class="diss">
+        <img src="~static/logo.png" alt="">
+      </div>
       <h1 class="title">
         CJTYWD
       </h1>
@@ -47,6 +50,17 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.diss{
+  width: 300px;
+  height: 220px;
+  background: url('~static/logo.png') no-repeat;
+}
+
+.diss img{
+  width: 100%;
+  height: 100%;
 }
 
 .title {
