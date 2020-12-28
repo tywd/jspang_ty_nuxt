@@ -14,6 +14,7 @@
         <li><nuxt-link :to="{name:'asyncData'}">asyncData</nuxt-link></li>
         <li><a href="/about">about</a></li>
         <li><a href="/news">news</a></li>
+        <li><nuxt-link :to="{name:'sass'}">sass</nuxt-link></li>
       </ul>
       
       <!-- <h2 class="subtitle">
