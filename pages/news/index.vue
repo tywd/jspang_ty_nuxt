@@ -5,7 +5,12 @@
     <ul>
       <li><a href="/">home</a></li>
       <li><a href="/news/123">news-123</a></li>
-      <li><a href="/news/456">news-456</a></li>
+      <li>
+        <nuxt-link :to="{name:'news-id',params:{id:456}}">news-456</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link :to="{name:'news-news_id',params:{news_id:789}}">news-789</nuxt-link>
+      </li>
       <li><a href="/news/aaa">news-aaa</a></li>
     </ul>
   </div>
@@ -16,12 +21,13 @@
 //例如：import 《组件名称》 from '《组件路径》';
 export default {
   // import引入的组件需要注入到对象中才能使用
+  transition:'test',
   components: {},
   props: {},
-  data() {
-  // 这里存放数据
+  data () {
+    // 这里存放数据
     return {
-      
+
     };
   },
   // 计算属性 类似于data概念
@@ -30,35 +36,34 @@ export default {
   watch: {},
   // 方法集合
   methods: {
-    
+
   },
   // 生命周期 - 创建完成（可以访问当前this实例）
-  created() {
-    
+  created () {
+
   },
   // 生命周期 - 挂载完成（可以访问DOM元素）
-  mounted() {
-    
+  mounted () {
+
   },
   // 生命周期 - 创建之前
-  beforeCreate() {},
+  beforeCreate () { },
   // 生命周期 - 挂载之前
-  beforeMount() {},
+  beforeMount () { },
   // 生命周期 - 更新之前
-  beforeUpdate() {},
+  beforeUpdate () { },
   // 生命周期 - 更新之后
-  updated() {},
+  updated () { },
   // 生命周期 - 销毁之前
-  beforeDestroy() {},
+  beforeDestroy () { },
   // 生命周期 - 销毁完成
-  destroyed() {},
+  destroyed () { },
   // 如果页面有keep-alive缓存功能，这个函数会触发
-  activated() {},
+  activated () { },
   // keep-alive 组件被移除时调用
-  deactivated() {},
+  deactivated () { },
 }
 </script>
 
 <style scoped>
-  
 </style>

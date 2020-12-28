@@ -20,7 +20,7 @@ module.exports = {
   * create all css
   * ~ 通配符，来匹配
   */
-  css:['~assets/css/base.css'],
+  css:['~assets/css/base.css','@/assets/css/page-transition.css'],
   /*
   * 配置访问域名与端口
   */

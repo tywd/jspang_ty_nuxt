@@ -1,5 +1,8 @@
+
+<!-- 默认布局 不需要重启 npm run dev-->
 <template>
   <div>
+    <p>默认布局 不需要重启 npm run dev</p>
     <nuxt/>
   </div>
 </template>

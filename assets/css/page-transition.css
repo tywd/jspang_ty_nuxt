@@ -1,0 +1,24 @@
+/* 路由动画效果渐变 
+* 要求用路由跳转的方式才会有渐变效果，普通的 location.href 跳转是没有的
+* 可以用 this.$router.push 或直接加标签 <nuxt-link :to="{name:news}">跳转</nuxt-link>
+*/ 
+.page-enter-active, .page-leave-active {
+  transition: opacity .3s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
+
+/* 单页面添加过渡效果，记得在单页面引入 test
+  export default {
+    transition:'test'
+  }
+*/
+.test-enter-active, .test-leave-active {
+  transition: all .3s;
+  font-size: 12px;
+}
+.test-enter, .test-leave-active {
+  opacity: 0;
+  font-size: 12px;
+}
