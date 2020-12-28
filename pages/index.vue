@@ -8,7 +8,7 @@
       <ul>
         <li><a href="/">home</a></li>
         <li><nuxt-link :to="{name:'index'}">nuxtlink home</nuxt-link></li>
-        <li><nuxt-link :to="{name:'about',params:{id:123}}">nuxtlink about</nuxt-link></li>
+        <li><nuxt-link :to="{name:'news',params:{newsid:123}}">nuxtlink news</nuxt-link></li>
         <li><a href="/about">about</a></li>
         <li><a href="/news">news</a></li>
       </ul>

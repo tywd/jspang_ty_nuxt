@@ -21,3 +21,5 @@ $ npm run generate
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
+### 说明
+以下画线为前缀的Vue文件就是动态路由 比如 pages/news/_id.vue

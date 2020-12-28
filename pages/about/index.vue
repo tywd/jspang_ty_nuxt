@@ -1,7 +1,6 @@
 <template>
   <div>
     <h2>about index page</h2>
-    <p>id:{{$route.params.id}}</p>
     <ul>
       <li><a href="/">home</a></li>
     </ul>

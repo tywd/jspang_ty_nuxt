@@ -1,8 +1,12 @@
 <template>
   <div>
     <h2>news index page</h2>
+    <p>newsid:{{$route.params.newsid}}</p>
     <ul>
       <li><a href="/">home</a></li>
+      <li><a href="/news/123">news-123</a></li>
+      <li><a href="/news/456">news-456</a></li>
+      <li><a href="/news/aaa">news-aaa</a></li>
     </ul>
   </div>
 </template>
